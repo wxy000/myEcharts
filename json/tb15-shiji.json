@@ -1,0 +1,16 @@
+{
+	"code": 200,
+	"msg": "请求成功",
+	"data": [
+		{"name": "BUG-其他程序问题","value": 28},
+		{"name": "产品BUG","value": 13},
+		{"name": "需求评估","value": 2},
+		{"name": "客制需求(转个案)","value": 31},
+		{"name": "客制需求(线上免费)","value": 54},
+		{"name": "程序更新","value": 26},
+		{"name": "单据数据","value": 4},
+		{"name": "Debug功能","value": 14},
+		{"name": "内部会议","value": 3},
+		{"name": "内部培训学员","value": 2}
+	]
+}

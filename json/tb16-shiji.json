@@ -1,0 +1,14 @@
+{
+	"code": 200,
+	"msg": "请求成功",
+	"data": [
+		{"name": "贝隆精密","value": 32},
+		{"name": "鼎捷软件","value": 5},
+		{"name": "杭州长川","value": 39},
+		{"name": "宁波秉航","value": 33},
+		{"name": "宁波霍科","value": 1},
+		{"name": "宁波宜胜","value": 11},
+		{"name": "浙江宏利","value": 52},
+		{"name": "浙江台玖","value": 4}
+	]
+}
