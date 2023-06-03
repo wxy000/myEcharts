@@ -9,8 +9,8 @@ layui.use(['layer', 'form'], function(){
 		"</div>");
 
 	// 获取到数据
-	const yuji = utilHttpGet("./json/tb15-yuji.json");
-	const shiji = utilHttpGet("./json/tb15-shiji.json");
+	const yuji = utilHttpGet(configALL.http_api+"/zentao/getLeixingInfo?dateStart=2023-04-27&dateEnd=2023-05-31&type0=2","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MTI0MDMsIkNyZWF0ZWRBdCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIiwiVXBkYXRlZEF0IjoiMDAwMS0wMS0wMVQwMDowMDowMFoiLCJEZWxldGVkQXQiOm51bGwsInVzZXJuYW1lIjoid2FuZ3h5YiIsInJlYWxuYW1lIjoi546L5YW05q-FIiwicGhvbmUiOiIxNTg1NzE3OTUyOSIsImVtYWlsIjoiMzk2MzEwNTgzQHFxLmNvbSIsImdlbmRlciI6Im0iLCJtYXJrIjoi5bCP546L5a2QIiwiZXhwIjoxNjg1ODM1MzAzLjI0MjYzNCwiaXNzIjoi5oeS54yrIn0.1o_GjY6z6pr7u7vvyPRI89xVmRu4yJsBhfLOCH4RQMk");
+	const shiji = utilHttpGet(configALL.http_api+"/zentao/getLeixingInfo?dateStart=2023-04-27&dateEnd=2023-05-31&type0=3","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MTI0MDMsIkNyZWF0ZWRBdCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIiwiVXBkYXRlZEF0IjoiMDAwMS0wMS0wMVQwMDowMDowMFoiLCJEZWxldGVkQXQiOm51bGwsInVzZXJuYW1lIjoid2FuZ3h5YiIsInJlYWxuYW1lIjoi546L5YW05q-FIiwicGhvbmUiOiIxNTg1NzE3OTUyOSIsImVtYWlsIjoiMzk2MzEwNTgzQHFxLmNvbSIsImdlbmRlciI6Im0iLCJtYXJrIjoi5bCP546L5a2QIiwiZXhwIjoxNjg1ODM1MzAzLjI0MjYzNCwiaXNzIjoi5oeS54yrIn0.1o_GjY6z6pr7u7vvyPRI89xVmRu4yJsBhfLOCH4RQMk");
 
 	// 基于准备好的dom，初始化echarts实例
 	const myChart = echarts.init(document.getElementById('tb15-body'));

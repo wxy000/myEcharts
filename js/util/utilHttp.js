@@ -4,7 +4,7 @@ function _response(){
 	this.data = {};
 }
 
-function utilHttp(type, url, data) {
+function utilHttp(type, url, token, data) {
 	const resp = new _response();
 	$.ajax({
 		url: url,
@@ -12,6 +12,9 @@ function utilHttp(type, url, data) {
 		dataType: "JSON",
 		async: false,
 		cache:false,
+		headers: {
+			access_token: token
+		},
 		data: data,
 		//成功
 		success: (res) => {
@@ -29,12 +32,12 @@ function utilHttp(type, url, data) {
 	return resp;
 }
 
-function utilHttpGet(url, data={}){
-	return utilHttp("GET", url, data)
+function utilHttpGet(url, token='', data={}){
+	return utilHttp("GET", url, token, data)
 }
 
-function utilHttpPost(url, data={}){
-	return utilHttp("POST", url, data)
+function utilHttpPost(url, token='', data={}){
+	return utilHttp("POST", url, token, data)
 }
 
 function utilHttpReadFile(url){

@@ -14,6 +14,7 @@ $.i18n.properties({
 		configALL.router_num = $.i18n.prop("router_num");
 		configALL.router_hidden = $.i18n.prop("router_hidden");
 		configALL.router_width = $.i18n.prop("router_width");
+		configALL.http_api = $.i18n.prop("http_api")
 	}
 });
 
