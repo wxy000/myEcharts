@@ -5,7 +5,7 @@ layui.use(['layer', 'form'], function(){
 	$("#tb14-header").css({"font-weight":"bold"}).html("按类型分类");
 
 	// 获取到数据
-	const s = utilHttpGet(configALL.http_api+"/zentao/getLeixingInfo?dateStart=2023-04-27&dateEnd=2023-05-31&type0=1","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MTI0MDMsIkNyZWF0ZWRBdCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIiwiVXBkYXRlZEF0IjoiMDAwMS0wMS0wMVQwMDowMDowMFoiLCJEZWxldGVkQXQiOm51bGwsInVzZXJuYW1lIjoid2FuZ3h5YiIsInJlYWxuYW1lIjoi546L5YW05q-FIiwicGhvbmUiOiIxNTg1NzE3OTUyOSIsImVtYWlsIjoiMzk2MzEwNTgzQHFxLmNvbSIsImdlbmRlciI6Im0iLCJtYXJrIjoi5bCP546L5a2QIiwiZXhwIjoxNjg1ODM1MzAzLjI0MjYzNCwiaXNzIjoi5oeS54yrIn0.1o_GjY6z6pr7u7vvyPRI89xVmRu4yJsBhfLOCH4RQMk")
+	const s = utilHttpGet(configALL.http_api+"/zentao/getAnalysisLeixing?dateStart=2023-04-27&dateEnd=2023-05-31&type0=1","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6MTI0MDMsIkNyZWF0ZWRBdCI6IjAwMDEtMDEtMDFUMDA6MDA6MDBaIiwiVXBkYXRlZEF0IjoiMDAwMS0wMS0wMVQwMDowMDowMFoiLCJEZWxldGVkQXQiOm51bGwsInVzZXJuYW1lIjoid2FuZ3h5YiIsInJlYWxuYW1lIjoi546L5YW05q-FIiwicGhvbmUiOiIxNTg1NzE3OTUyOSIsImVtYWlsIjoiMzk2MzEwNTgzQHFxLmNvbSIsImdlbmRlciI6Im0iLCJtYXJrIjoi5bCP546L5a2QIiwiZXhwIjoxNjg1ODgwODk1LjUwMjkwNDIsImlzcyI6IuaHkueMqyJ9.AciAhHGhIT3868b19OrRHip_iFJjIIH7F98xKnTmdxQ")
 
 	// 基于准备好的dom，初始化echarts实例
 	const myChart = echarts.init(document.getElementById('tb14-body'));
